@@ -31,4 +31,14 @@ helloworld <- function(env){
     )
 }
 
+library(Rook)
+s <- Rhttpd$new()
+p <- system.file('exampleApps',package='Rook')
+s$launch(name='prova',app=helloworld)
+#> s$launch(name='hello',app=file.path(p,'helloworld.R'))
+#> s$launch(name='helloref',app=file.path(p,'helloworldref.R'))
+#> s$launch(name='hmisc',app=file.path(p,'Hmisc/config.R'))
+#> s$launch(name='summ',app=file.path(p,'summary.R'))
+s
+
 
