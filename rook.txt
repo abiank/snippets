@@ -1,0 +1,34 @@
+> library(Rook)
+> s <- Rhttpd$new()
+> p <- system.file('exampleApps',package='Rook')
+> s$launch(name='RookTest',app=file.path(p,'RookTestApp.R'))
+> s$launch(name='hello',app=file.path(p,'helloworld.R'))
+> s$launch(name='helloref',app=file.path(p,'helloworldref.R'))
+> s$launch(name='hmisc',app=file.path(p,'Hmisc/config.R'))
+> s$launch(name='summ',app=file.path(p,'summary.R'))
+> s
+Server started on 127.0.0.1:35201
+[1] RookTest http://127.0.0.1:35201/custom/RookTest
+[2] hello http://127.0.0.1:35201/custom/hello
+[3] helloref http://127.0.0.1:35201/custom/helloref
+[4] hmisc http://127.0.0.1:35201/custom/hmisc
+[5] summ http://127.0.0.1:35201/custom/summ
+
+Call browse() with an index number or name to run an application.
+> s$browse(1)
+
+--------------
+
+
+
+helloworld <- function(env){ 
+    list(
+        status=200,
+        headers = list(
+            'Content-Type' = 'text/html'
+        ),
+        body = paste('<h1>Hello World!</h1>')
+    )
+}
+
+
