@@ -55,7 +55,7 @@ res$finish()
 }
 
 library(Rook)
-s <- Rhttpd$new()
+s <- Rhttpd$new(listen="0.0.0.0",port="32768")
 #p <- system.file('exampleApps',package='Rook')
 #s$launch(name='prova',app=helloworld)
 #s$launch(name='eval',app=app)
