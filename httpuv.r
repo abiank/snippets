@@ -9,7 +9,7 @@ res$header( 'access-control-allow-headers','accept, accept-charset, accept-encod
 res$write( paste(capture.output(toJSON(eval(parse(text=req$params()$param))),file=NULL),collapse='\n'))
 res$finish()
 }
-
+# cat(toJSON(eval(parse(text=sub("param=","",POST$param)))))
 app2 <- function(env){ 
     list(
         status=200,
@@ -22,7 +22,8 @@ app2 <- function(env){
 	    
 	    
         ),
-        body = paste(capture.output(ls(env))," ",capture.output(cat(rawToChar(env$rook.input$read()))))
+        #body = paste(capture.output(ls(env))," ",capture.output(cat(rawToChar(env$rook.input$read()))))
+	body = paste(capture.output(cat(toJSON(eval(env=globalenv(),parse(text=sub("param=","",rawToChar(env$rook.input$read()))))))))
     )
 }
 
