@@ -1,20 +1,20 @@
 ArrayExpression
 AssignmentExpression
-BinaryExpression
+ BinaryExpression
 BlockStatement
 BreakStatement
-CallExpression
-ConditionalExpression
+ CallExpression
+ ConditionalExpression
 ContinueStatement
 EmptyStatement
-ExpressionStatement
+ ExpressionStatement
 ForInStatement
 ForStatement
 FunctionExpression
-Identifier
+ Identifier
 IfStatement
 LabeledStatement
-Literal
+ Literal
 LogicalExpression
 MemberExpression
 NewExpression
