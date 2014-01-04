@@ -273,3 +273,28 @@ function f() { return func(2+2) }
         }
     ]
 }
+
+
+// a[2]
+
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "MemberExpression",
+                "computed": true,
+                "object": {
+                    "type": "Identifier",
+                    "name": "a"
+                },
+                "property": {
+                    "type": "Literal",
+                    "value": 2,
+                    "raw": "2"
+                }
+            }
+        }
+    ]
+}
