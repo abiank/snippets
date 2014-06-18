@@ -23061,7 +23061,7 @@ numeric.svd= function svd(A) {
 }(this, String);
 
 },{}],9:[function(require,module,exports){
-require("./lib/formula.js");
+formulajs=require("./lib/formula.js");
 //console.log(this);
 console.log("loaded.");
 },{"./lib/formula.js":1}]},{},[9])
