@@ -1,0 +1,76 @@
+
+
+
+Assuming you have a database named foo_production you can write data by doing a POST to /db/foo_production/series?u=some_user&p=some_password
+
+
+
+
+
+
+
+
+
+
+influxdp=function(sname,svalue){ 
+return([
+  {
+    "name": sname,
+    "columns": ["value"],
+    "points": [
+      [svalue]]
+    
+  }]
+);
+}
+
+//console.log(influxdp("a","b"));
+
+
+influxpost= function (dp,db,user,pass)
+{
+httppost("sandbox.influxdb.org",9061,"/db/"+db+"/series?u="+user+"&p="+pass,JSON.stringify(dp));
+}
+
+// influxpost(influxdp("HELLO","WORLD"),"recalcc","recalcc","TOTALLYNOTMYPW");
+
+
+
+
+
+
+
+bla=
+[
+  {
+    "name": "events",
+    "columns": ["state", "email", "type"],
+    "points": [
+      ["ny", "paul@influxdb.org", "follow"],
+      ["ny", "todd@influxdb.org", "open"]
+    ]
+  }
+];
+influxpost(bla,"recalcc","recalcc","recalccinflux");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
