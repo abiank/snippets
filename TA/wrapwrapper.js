@@ -37,11 +37,11 @@ eval(template1_1_1.replace(/£/g,ea));
 console.log(template1_1_1.replace(/£/g,ea));
 }
 
-var template2_1_0='_f£=function(e,t){if(typeof e!="object"||typeof e.length=="undefined")return["input is not an array"];if(typeof t!="object"||typeof t.length=="undefined")return["input2 is not an array"];var n=_malloc(4);var r=_malloc(4);var i=new Float64Array(e.length);var s=array2heapPtr(e);var o=s.byteOffset;var u=array2heapPtr(t);var a=u.byteOffset;var f=array2heapPtr(i);var l=f.byteOffset;var c=TA_£(0,e.length,o,a,n,r,l);console.log("retcode:"+c);console.log("outbeg:"+getValue(n));console.log("outnb:"+getValue(r));var h=new Float64Array(f.buffer,f.byteOffset,i.length);var p=[].slice.call(h);Module._free(u.byteOffset);Module._free(s.byteOffset);Module._free(n);Module._free(r);if(c===0)return p.reverse();else return["ERR"+c]}_fMULT=function(e,t){if(typeof e!="object"||typeof e.length=="undefined")return["input is not an array"];if(typeof t!="object"||typeof t.length=="undefined")return["input2 is not an array"];var n=_malloc(4);var r=_malloc(4);var i=new Float64Array(e.length);var s=array2heapPtr(e);var o=s.byteOffset;var u=array2heapPtr(t);var a=u.byteOffset;var f=array2heapPtr(i);var l=f.byteOffset;var c=TA_£(0,e.length,o,a,n,r,l);console.log("retcode:"+c);console.log("outbeg:"+getValue(n));console.log("outnb:"+getValue(r));var h=new Float64Array(f.buffer,f.byteOffset,i.length);var p=[].slice.call(h);Module._free(u.byteOffset);Module._free(s.byteOffset);Module._free(n);Module._free(r);if(c===0)return p.reverse();else return["ERR"+c]}';
+var template2_1_0='_f£=function(e,t){if(typeof e!="object"||typeof e.length=="undefined")return["input is not an array"];if(typeof t!="object"||typeof t.length=="undefined")return["input2 is not an array"];var n=_malloc(4);var r=_malloc(4);var i=new Float64Array(e.length);var s=array2heapPtr(e);var o=s.byteOffset;var u=array2heapPtr(t);var a=u.byteOffset;var f=array2heapPtr(i);var l=f.byteOffset;var c=TA_£(0,e.length,o,a,n,r,l);console.log("retcode:"+c);console.log("outbeg:"+getValue(n));console.log("outnb:"+getValue(r));var h=new Float64Array(f.buffer,f.byteOffset,i.length);var p=[].slice.call(h);Module._free(u.byteOffset);Module._free(s.byteOffset);Module._free(n);Module._free(r);if(c===0)return p.reverse();else return["ERR"+c]}';
 
 o2_1_0={MULT:1,ADD:1,SUB:1,DIV:1};
 for (ea in o2_1_0) {
-    console.log("WTF",ea);
+console.log(template2_1_0.replace(/£/g,ea));
 eval(template2_1_0.replace(/£/g,ea));
 }
 
