@@ -41,6 +41,7 @@ var template2_1_0='_f£=function(e,t){if(typeof e!="object"||typeof e.length=="u
 
 o2_1_0={MULT:1,ADD:1,SUB:1,DIV:1};
 for (ea in o2_1_0) {
+    console.log("WTF",ea);
 eval(template2_1_0.replace(/£/g,ea));
 }
 
