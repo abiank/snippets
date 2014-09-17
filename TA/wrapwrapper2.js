@@ -1,47 +1,17 @@
 var template1_1_1='_f£=function(e,t){if(typeof e!="object"||typeof e.length=="undefined"){return["input is not an array"]}var n=_malloc(4);var r=_malloc(4);var i=new Float64Array(e.length);var s=array2heapPtr(e);var o=s.byteOffset;var u=array2heapPtr(i);var a=u.byteOffset;var f=TA_£(0,e.length,o,t,n,r,a);console.log("retcode:"+f);console.log("outbeg:"+getValue(n));console.log("outnb:"+getValue(r));var l=new Float64Array(u.buffer,u.byteOffset,i.length);var c=[].slice.call(l);excess=getValue(n);for(var k=0;k<excess;k++){c.unshift(0)}c.splice(e.length,excess);Module._free(s.byteOffset);Module._free(u.byteOffset);Module._free(n);Module._free(r);if(f===0){return c}else{return["ERR"+f]}};';
 
-var o1_1_1={
-AVGDEV:1,
-CMO:1,
-DEMA:1,
-EMA:1,
-KAMA:1,
-LINEARREG:1,
-LINEARREG_ANGLE:1,
-LINEARREG_INTERCEPT:1,
-LINEARREG_SLOPE:1,
-MAX:1,
-MIDPOINT:1,
-MIN:1,
-MOM:1,
-ROC:1,
-ROCP:1,
-ROCR:1,
-ROCR100:1,
-RSI:1,
-SMA:1,
-SUM:1,
-TEMA:1,
-TRIMA:1,
-TRIX:1,
-TSF:1,
-WMA:1}
-
-/*
-eval(template1_1_1.replace(/£/g,"RSI"));
-console.log(template1_1_1.replace(/£/g,"RSI"));
-*/
+var o1_1_1={AVGDEV:1,CMO:1,DEMA:1,EMA:1,KAMA:1,LINEARREG:1,LINEARREG_ANGLE:1,LINEARREG_INTERCEPT:1,LINEARREG_SLOPE:1,MAX:1,MIDPOINT:1,MIN:1,MOM:1,ROC:1,ROCP:1,ROCR:1,ROCR100:1,RSI:1,SMA:1,SUM:1,TEMA:1,TRIMA:1,TRIX:1,TSF:1,WMA:1}
 
 for (ea in o1_1_1) {
 eval(template1_1_1.replace(/£/g,ea));
-console.log(template1_1_1.replace(/£/g,ea));
+//console.log(template1_1_1.replace(/£/g,ea));
 }
 
 var template2_1_0='_f£=function(e,t){if(typeof e!="object"||typeof e.length=="undefined"){return["input is not an array"]}if(typeof t!="object"||typeof t.length=="undefined"){return["input2 is not an array"]}var n=_malloc(4);var r=_malloc(4);var i=new Float64Array(e.length);var s=array2heapPtr(e);var o=s.byteOffset;var u=array2heapPtr(t);var a=u.byteOffset;var f=array2heapPtr(i);var l=f.byteOffset;var c=TA_£(0,e.length,o,a,n,r,l);console.log("retcode:"+c);console.log("outbeg:"+getValue(n));console.log("outnb:"+getValue(r));var h=new Float64Array(f.buffer,f.byteOffset,i.length);var p=[].slice.call(h);excess=getValue(n);for(var k=0;k<excess;k++){p.unshift(0)}p.splice(e.length,excess);Module._free(u.byteOffset);Module._free(s.byteOffset);Module._free(n);Module._free(r);if(c===0){return p}else{return["ERR"+c]}};';
 
 o2_1_0={MULT:1,ADD:1,SUB:1,DIV:1};
 for (ea in o2_1_0) {
-console.log(template2_1_0.replace(/£/g,ea));
+//console.log(template2_1_0.replace(/£/g,ea));
 eval(template2_1_0.replace(/£/g,ea));
 }
 
